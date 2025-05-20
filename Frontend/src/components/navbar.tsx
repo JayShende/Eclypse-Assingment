@@ -1,19 +1,18 @@
-
-import logoNavbar from '../assets/images/logoNavbar.png'
+import logoNavbar from '../assets/images/logoNavbar.png';
 import BuyButton from './ui/buy-button';
 
 const NavBarComponent = () => {
   return (
-    <div className="w-[full] h-[75px] bg-black bg-opacity-59 pl-[60px] pr-[50.62px] pt-[12.9px] pb-[16.6px] flex justify-between">
-        <img src={logoNavbar} alt="logo" className='w-[48.79px] h-[45.464px]' />
-        <div className='text-white flex gap-x-[70px] font-Poppins text-xl font-normal  items-center'>
+    <div className="fixed top-0 left-0 w-full z-50 h-[75px] bg-black bg-opacity-60 pl-[60px] pr-[50.62px] pt-[12.9px] pb-[16.6px] flex justify-between items-center backdrop-blur-lg">
+      <img src={logoNavbar} alt="logo" className="w-[48.79px] h-[45.464px]" />
+      <div className="text-white flex gap-x-[70px] font-Poppins text-xl font-normal items-center">
         <span>About Us</span>
         <span>Waitlist</span>
         <span>Cart</span>
-        <BuyButton/>
-        </div>
+        <BuyButton />
+      </div>
     </div>
-  )
+  );
 };
 
 export default NavBarComponent;
