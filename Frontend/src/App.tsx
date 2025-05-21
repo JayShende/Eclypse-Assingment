@@ -1,6 +1,7 @@
 import HeroSection2 from "./components/hero-2"
 import HeroSection from "./components/hero-section"
 import NavBarComponent from "./components/navbar"
+import Random from "./components/randomspace"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <NavBarComponent/>
       <HeroSection/>
       <HeroSection2/>
+      <Random/>
     </div>
   )
 }
