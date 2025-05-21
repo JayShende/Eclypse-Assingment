@@ -3,7 +3,7 @@ import VideoHeroSection from "./ui/video-container";
 const HeroSection = () => {
   return (
    <div className="w-full">
-    <div className="mt-[122px] flex justify-between items-end">
+    <div className="mt-40 flex justify-between items-end">
         <div className="text-8xl text-white ml-[44px] font-normal font-Poppins">
             Eclypse
         </div>

@@ -2,8 +2,8 @@ import Hero_Video from "../../assets/video/Hero_Video.mp4"
 
 const VideoHeroSection = () => {
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <div className="relative w-[95vw] h-[530px] mt-[27px] mx-[37px]">
+    <div className="w-fit h-screen flex items-center justify-center">
+      <div className="relative w-[93vw] h-[530px] mt-[27px] mx-[37px]">
         <video
           src={Hero_Video}
           autoPlay
