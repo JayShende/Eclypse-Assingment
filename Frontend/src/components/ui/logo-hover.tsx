@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-// Define the types for the props of the HoverImage component
+
 interface HoverImageProps {
   defaultImage: string;
   hoverImage: string;
   altText: string;
 }
 
-// Main App component
 
 
 /**

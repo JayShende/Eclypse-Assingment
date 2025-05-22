@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
-// Default placeholder image URL
+
 const DEFAULT_IMAGE_URL = "https://placehold.co/600x400/cccccc/333333?text=Hover+Over+Me";
 const DEFAULT_HOVER_TEXT = "Hello World!";
 
-// Interface for component props
+
 interface ImageHoverFadeTextProps {
   imageUrl?: string;
   hoverText?: string;
   altText?: string;
-  width?: string; // e.g., 'w-64', 'w-full'
-  height?: string; // e.g., 'h-64', 'h-auto'
-  // e.g., 'rounded-lg', 'rounded-full'
+  width?: string; 
+  height?: string; 
+ 
 }
 
 export const ImageHoverFadeText: React.FC<ImageHoverFadeTextProps> = ({
