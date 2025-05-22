@@ -1,10 +1,10 @@
+import FooterSection from "./components/footer-section"
 import GridSection from "./components/grid-section"
 import HeroSection2 from "./components/hero-2"
 import HeroSection from "./components/hero-section"
 import NavBarComponent from "./components/navbar"
 import ProductInfo from "./components/product-info"
 import ProductShop from "./components/product-shop"
-import Random from "./components/randomspace"
 import Reviews from "./components/reviews"
 
 
@@ -20,7 +20,8 @@ function App() {
        <ProductShop/>
        <ProductInfo/>
        <Reviews/>
-      <Random/>
+       <FooterSection/>
+     
     </div>
   )
 }
