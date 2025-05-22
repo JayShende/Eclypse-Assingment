@@ -2,6 +2,7 @@ import GridSection from "./components/grid-section"
 import HeroSection2 from "./components/hero-2"
 import HeroSection from "./components/hero-section"
 import NavBarComponent from "./components/navbar"
+import ProductShop from "./components/product-shop"
 import Random from "./components/randomspace"
 
 
@@ -14,6 +15,7 @@ function App() {
       <HeroSection/> 
        <HeroSection2/> 
        <GridSection/>
+       <ProductShop/>
       <Random/>
     </div>
   )
