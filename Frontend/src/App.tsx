@@ -5,6 +5,7 @@ import NavBarComponent from "./components/navbar"
 import ProductInfo from "./components/product-info"
 import ProductShop from "./components/product-shop"
 import Random from "./components/randomspace"
+import Reviews from "./components/reviews"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
        <GridSection/>
        <ProductShop/>
        <ProductInfo/>
+       <Reviews/>
       <Random/>
     </div>
   )
