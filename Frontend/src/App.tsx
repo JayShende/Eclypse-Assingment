@@ -4,7 +4,7 @@ import PaymentsPage from "./pages/payments-page";
 
 function App() {
   return (
-    <div >
+    <div className="w-screen h-screen">
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<HomePage />} />

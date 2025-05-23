@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 const DEFAULT_IMAGE_URL = "https://placehold.co/600x400/cccccc/333333?text=Hover+Over+Me";
-const DEFAULT_HOVER_TEXT = "Hello World!";
+// const DEFAULT_HOVER_TEXT = "Hello World!";
 
 
 interface ImageHoverFadeTextProps {
@@ -16,7 +16,7 @@ interface ImageHoverFadeTextProps {
 
 export const ImageHoverFadeText: React.FC<ImageHoverFadeTextProps> = ({
   imageUrl = DEFAULT_IMAGE_URL,
-  hoverText = DEFAULT_HOVER_TEXT,
+  // hoverText = DEFAULT_HOVER_TEXT,
   altText = "Interactive image",
   width = "w-full", // Default width
   height = "h-full", // Default height
@@ -52,18 +52,7 @@ export const ImageHoverFadeText: React.FC<ImageHoverFadeTextProps> = ({
       />
 
       {/* Hover Text Overlay */}
-      <div
-        className={`
-          absolute inset-0 flex items-end justify-center p-4
-          transition-opacity duration-500 ease-in-out
-          ${isHovered ? 'opacity-100' : 'opacity-0'}
-          
-        `}
-      >
-        <p className="text-white text-4xl font-semibold text-left bg-opacity-50  rounded-md">
-          {hoverText}
-        </p>
-      </div>
+      
     </div>
   );
 };

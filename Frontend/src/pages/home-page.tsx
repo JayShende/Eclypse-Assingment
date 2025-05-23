@@ -9,7 +9,7 @@ import FooterSection from "../components/footer-section";
 
 function HomePage() {
   return (
-    <div className="w-full h-auto bg-zinc-950 flex flex-col">
+    <div className="w-screen h-auto bg-zinc-950 flex flex-col">
       <NavBarComponent />
       <HeroSection />
       <HeroSection2 />
