@@ -6,18 +6,25 @@ import ProductShop from "../components/product-shop";
 import ProductInfo from "../components/product-info";
 import Reviews from "../components/reviews";
 import FooterSection from "../components/footer-section";
-
+import React, { useRef } from 'react';
 function HomePage() {
+  const targetRef = useRef<HTMLDivElement>(null);
+
+  const scrollToDiv = () => {
+    console.log("Inside the fun");
+    targetRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="w-screen h-auto bg-zinc-950 flex flex-col">
       <NavBarComponent />
-      <HeroSection />
+      <HeroSection mainRef={targetRef}/>
       <HeroSection2 />
       <GridSection />
       <ProductShop />
       <ProductInfo />
       <Reviews />
-      <FooterSection />
+      <FooterSection scrollTop={scrollToDiv}/>
     </div>
   );
 }

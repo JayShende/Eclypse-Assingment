@@ -1,8 +1,15 @@
 import VideoHeroSection from "./ui/video-container";
 import { FaRegRegistered } from "react-icons/fa";
-const HeroSection = () => {
+
+interface HeroSectionProps{
+  mainRef:React.RefObject<HTMLDivElement | null>
+}
+
+const HeroSection = ({
+  mainRef
+}:HeroSectionProps) => {
   return (
-    <div className="w-screen ">
+    <div className="w-screen" ref={mainRef}>
       <div className="mt-40 flex justify-between items-end mb-2">
         <div className="flex">
           <div className="sm:text-8xl text-3xl text-white sm:ml-[44px] ml-[18px] font-normal font-Poppins">

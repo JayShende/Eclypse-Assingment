@@ -1,7 +1,17 @@
 import { MdArrowOutward } from "react-icons/md";
 import { FaArrowUpLong } from "react-icons/fa6";
-const FooterSection = () => {
+
+interface FooterSectionProps{
+  scrollTop:() => void
+}
+
+const FooterSection = ({
+  scrollTop
+}:FooterSectionProps) => {
+
+
   return (
+    
     <>
     <div className="sm:grid grid-cols-4 mt-[71px] mx-[50px] p-6  gap-6 font-Poppins text-zinc-300 hidden">
       <div className=" h-10 flex flex-col">
@@ -45,7 +55,11 @@ const FooterSection = () => {
       </div>
 
       <div className=" flex flex-col items-end justify-between">
-        <div className="p-2 w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer"><FaArrowUpLong className="text-xl text-black" /></div>
+        <div className="p-2 w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer"
+        onClick={()=>{
+         scrollTop();
+        }}
+        ><FaArrowUpLong className="text-xl text-black" /></div>
         <span className="opacity-60 text-[11px]">© Eclypse 2025</span>
       </div>
 
