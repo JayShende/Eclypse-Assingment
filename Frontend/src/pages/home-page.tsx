@@ -6,7 +6,7 @@ import ProductShop from "../components/product-shop";
 import ProductInfo from "../components/product-info";
 import Reviews from "../components/reviews";
 import FooterSection from "../components/footer-section";
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 function HomePage() {
   const targetRef = useRef<HTMLDivElement>(null);
 
